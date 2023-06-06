@@ -1,0 +1,166 @@
+
+.grid-container div {
+    text-align: center;
+    padding: 20px;
+    font-size: 25px; 
+    background-color:#DCDCDC;
+ 
+    
+}
+
+#header {background-color: #BE0115;
+    color: #040001;
+    font-size: 16px;
+    margin-top: 6px;
+    padding: 2px;
+    width:auto;
+    font-family: sedgwick ave;
+
+}
+#header img{
+
+    float: left;
+    padding-left: 40px;
+    width: 150px;
+    height: auto;
+
+}
+
+#header h2{
+    position: relative;
+    left: -95px;
+}
+
+#navbar { 
+    font-family: sedgwick ave;
+    background-color: #040001;
+    font-size: 20px; 
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    padding-right: 10px;
+}
+
+.nav-links a:hover {
+    color:#BE0115;
+}
+
+#searchbar {
+    padding:0px;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#picture {
+
+padding:6px;
+   
+}
+
+.post img{
+    float:left;
+    width:50%;
+    height: auto;
+    padding: 0 15px 10px 0;
+
+}
+
+#footer{height: 25px;
+    background-color:  #040001;
+    color:white;
+    font-size: 16px;
+    text-align: center;
+    padding: 30px;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+        padding-right: 15px;
+    }
+    a:hover {
+        color:#BE0115;}
+h2, h3 {
+    font-family: sedgwick ave;
+}
+h2 {
+    font-size: 1.1em;
+    text-decoration: underline;
+    text-align: left;
+    
+}
+h4 {
+    
+   font-family: 'Oxygen', sans-serif;
+   text-align:left;
+   font-size: 14px;
+}
+h3 {
+    font-size: 16px; 
+    text-align:left;
+}
+
+p {
+  
+    color: black;
+    font-size: 14px;
+    font-family: 'Oxygen', sans-serif;
+   
+    text-align:left;
+  }
+
+.post_summary a {
+    color: black;
+}
+
+.post_summary a:hover {
+    color:#BE0115;
+}
+
+#search-container {display: none;}
+
+#more {display: none;}
+
+.searchButton {
+    color: white;
+    background: none!important;
+    border: none;
+    padding: 0!important;
+
+    font-family: sedgwick ave;
+    text-align: left;
+    font-size: 20px;
+}
+
+.textButton {
+    background: none!important;
+    border: none;
+    padding: 0!important;
+
+    font-family: 'Oxygen', sans-serif;
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+@media (max-width: 750px) {
+
+    #header img {
+        display: none!important;
+    }
+
+    #header h1,h2{
+        position: relative;
+        left: 0px;
+    }
+
+    #navbar, .searchButton {
+        font-size: 15px; 
+    }
+
+}

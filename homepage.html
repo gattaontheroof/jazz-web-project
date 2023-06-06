@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="stylesheet" href="grid.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Blog</title>
+    <style>
+       
+    </style> 
+</head>
+<body>
+<!-- Creating a container div for the grid -->
+<div class="grid-container"> 
+
+<!-- Creating a header-->
+    <div id="header">    
+        <h1>Night Creatures Jazz Blog</h1>
+    </div>
+<!-- Creating a navigation bar -->     
+        <div id="navbar">
+            <nav class="nav-links">     
+                <a href="Home"> Home </a>
+                <a href="Most_popular"> Most Popular </a>
+                <a href="Contact"> Contact </a>
+                <a href="Sign_in"> Sign In </a>
+                <button onclick="showSearchbar()" id="test" class="searchButton">Search</button>
+            </nav>
+        </div>
+        <!-- Creating a search bar -->  
+        <div id="searchbar">
+            <div id="search-container">
+                <form action="/action_page.php">
+                  <input type="text" placeholder="Search.." name="search">
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+              </div>
+        </div>
+        <!-- Creating the main image --> 
+        <div id="picture">
+            <img src="jazz5.PNG"  />
+        </div>
+
+<!-- Creating the about section -->         
+        
+        <div id="about">
+            <h3>Jazz is characterized by swing and blue notes, complex chords, call and response vocals, polyrhythms and improvisation. Jazz has roots in European harmony and African rhythmic rituals.  Vivamus non libero nec arcu tristique luctus. Sed nunc turpis, euismod sit amet molestie et, porta non mauris. Curabitur pretium dolor eget orci iaculis mattis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin eget justo a arcu bibendum condimentum. </h3>
+        </div>
+
+<!-- Creating a parent class called post that will hold posts -->          
+       
+        <div class="post">
+            
+            <h3 class = "post_title"> It Don't Mean a Thing (If It Ain't Got That Swing) </h3>
+            <h4 class = "post_date">25 JANUARY 2023</h4>
+            <img src="jazz1.jpg"  />
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel dapibus odio, id elementum magna. Vestibulum eu sem nec nulla eleifend pharetra a nec velit. Mauris quis cursus risus. Donec enim ipsum, accumsan lobortis erat a, laoreet semper lorem. Nulla ornare rhoncus velit id fringilla. Nulla a iaculis diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce odio purus, laoreet efficitur elit sit amet, ultrices tincidunt massa. Sed laoreet aliquet nibh in dignissim. Maecenas in sodales erat. Suspendisse quis posuere nisl, eget mollis sapien. Nullam consectetur auctor erat. Proin semper, felis quis laoreet porta, purus erat lobortis diam, sed sagittis dolor quam vitae mauris. Vestibulum a convallis metus. Aliquam imperdiet, libero et blandit porttitor, orci libero auctor nisi, a posuere felis ligula et orci. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                <span id="dots">...</span>
+                <span id="more">
+                    Ut euismod lacinia nisl sit amet gravida. Donec faucibus condimentum posuere. Ut ipsum nibh, eleifend sed ipsum eu, ultrices rhoncus eros. Aliquam sit amet fringilla urna. Vivamus vel suscipit nibh. Vivamus turpis felis, consequat ac tincidunt eu, tempor vitae justo. Aliquam tempus, sapien vitae vehicula rutrum, risus eros luctus enim, at pulvinar nunc eros ac metus. Aenean ornare eu nunc nec tempor. Aliquam erat volutpat. In hac habitasse platea dictumst. Nullam efficitur, diam et auctor aliquet, velit ex vulputate sapien, nec dapibus turpis est vitae enim. Sed vitae accumsan quam.</p>
+                </span>
+            </p>
+            <button onclick="showMore()" id="showMoreBtn" class="textButton">READ MORE...</button>
+        </div>
+
+        <!-- Creating the most popular post side section --> 
+        <div id ="most_popular">
+            <h2 class = "post_title">Most Popular: </h2>
+            <div class = "post_summary">
+                <h3>A night in Tunisia</h3>
+                <h4 class = "post_date">4 MARCH 2021</h4>
+                <p>Aliquam tempus, sapien vitae vehicula rutrum, risus eros luctus enim, at pulvinar nunc eros ac metus.</p>
+                <h4 class = "more"><a href="Post.html?id=55">READ MORE....</a></h4>
+            </div>
+            <div class = "post_summary">
+                <h4 class = "post_date">17 APRIL 2022</h4>
+                <h3>Bill Evans - Portrait in Jazz (1960 Album)</h3>
+                <p>Aliquam tempus, sapien vitae vehicula rutrum, risus eros luctus enim, at pulvinar nunc eros ac metus.</p>
+                <h4 class = "more"><a href="Post.html?id=1">READ MORE....</a></h4>
+            </div>
+            <div class = "post_summary">
+                <h3>The 25 Best Female Jazz Singers Of All Time</h3>
+                <h4 class = "post_date">15 AUGUST 2020</h4>
+                <p>Aliquam tempus, sapien vitae vehicula rutrum, risus eros luctus enim, at pulvinar nunc eros ac metus.</p>
+                <h4 class = "more"><a href="Post.html?id=32">READ MORE....</a></h4>
+            </div>
+        </div>
+        <!-- Post section continued-->
+        <div class="post">
+            <h3 class = "post_title"> Jamie Cullum: Twentysomething 20 years on</h3>
+            <h4 class = "post_date">18 JANUARY 2023</h4>
+            <img src="jazz3.jpg"  />
+           <p>Etiam mattis vestibulum justo. Etiam hendrerit lorem eu neque efficitur, quis scelerisque diam lacinia. In a pulvinar erat, sed faucibus ipsum. Nunc imperdiet, ligula a tincidunt eleifend, ligula nisl tristique lectus, et finibus leo libero dignissim nulla. Integer finibus mauris eget ex euismod volutpat. Maecenas felis mi, porta a arcu quis, imperdiet bibendum turpis. Donec consequat, mauris nec pharetra sagittis, velit nunc volutpat diam, at vestibulum magna est eget neque. Maecenas sit amet aliquet nibh, vel dapibus turpis. Curabitur egestas dolor diam, nec lobortis sem pellentesque at. Ut sollicitudin vel purus sagittis cursus. Nulla porta justo vel orci porttitor venenatis. Morbi in varius ante. Quisque pharetra sit amet arcu eu rhoncus. Maecenas metus urna, gravida eu justo volutpat, congue auctor nisi. Integer posuere tortor turpis, vel rutrum nisi consequat mattis. Aliquam ullamcorper, magna non pulvinar facilisis, velit libero tempus lectus, sed tempus mi urna aliquet est.</p>
+        </div>
+
+        <div class="post">
+            <h3 class = "post_title"> Edinburgh Jazz & Blues Festival 2023 Updates </h3>
+            <h4 class = "post_date">12 JANUARY 2023</h4>
+            <img src="jazz4.jpg"  />
+           <p>Etiam mattis vestibulum justo. Etiam hendrerit lorem eu neque efficitur, quis scelerisque diam lacinia. In a pulvinar erat, sed faucibus ipsum. Nunc imperdiet, ligula a tincidunt eleifend, ligula nisl tristique lectus, et finibus leo libero dignissim nulla. Integer finibus mauris eget ex euismod volutpat. Maecenas felis mi, porta a arcu quis, imperdiet bibendum turpis. Donec consequat, mauris nec pharetra sagittis, velit nunc volutpat diam, at vestibulum magna est eget neque. Maecenas sit amet aliquet nibh, vel dapibus turpis. Curabitur egestas dolor diam, nec lobortis sem pellentesque at. Ut sollicitudin vel purus sagittis cursus. Nulla porta justo vel orci porttitor venenatis. Morbi in varius ante. Quisque pharetra sit amet arcu eu rhoncus. Maecenas metus urna, gravida eu justo volutpat, congue auctor nisi. Integer posuere tortor turpis, vel rutrum nisi consequat mattis. Aliquam ullamcorper, magna non pulvinar facilisis, velit libero tempus lectus, sed tempus mi urna aliquet est.</p>
+        </div>
+  <!-- Creating the footer -->    
+  <div id="footer">
+    <footer>
+        <a href="privacy_policy"> PRIVACY POLICY </a>
+        <a href="legal"> LEGAL INFORMATION </a>
+        <a href="Contact"> CONTACT </a>  
+        <a href="fb" class="fa fa-facebook"></a>
+        <a href="twitter" class="fa fa-twitter"></a>   
+        <a href="insta" class="fa fa-instagram"></a>        
+    </footer>
+    
+    <script>
+        function showSearchbar() {
+            var searchContainer = document.getElementById("search-container");
+            searchContainer.style.display = "block";
+        }
+
+        function showMore() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("showMoreBtn");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "READ MORE...";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "READ LESS...";
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
+</div>
+</body>
+</html>
