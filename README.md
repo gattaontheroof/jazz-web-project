@@ -5,4 +5,4 @@
  ![Desktop version] (https://github.com/gattaontheroof/jazz-web-project/blob/main/JazzBlogDesktopScreen.png)
  
 # mobile view of the project:
-![Mobile version] ()
+![Mobile version] (https://github.com/gattaontheroof/jazz-web-project/blob/main/JazzBlogMobileScreen.png)
